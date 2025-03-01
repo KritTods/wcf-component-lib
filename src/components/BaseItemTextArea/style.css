@@ -1,0 +1,7 @@
+.ant-input-textarea-show-count .ant-input-data-count{
+	bottom: -30px !important;
+}
+
+.ant-input-textarea-affix-wrapper.ant-input-affix-wrapper >textarea.ant-input {
+	min-height: 90px;
+}

@@ -1,0 +1,102 @@
+.base-collapse {
+	border: 0 !important;
+	.ant-collapse-header {
+		color: white !important;
+		align-items: center !important;
+		padding: 24px !important;
+		.ant-collapse-header-text {
+			font-size: 22px;
+			line-height: 24px;
+		}
+	}
+	.ant-collapse-content {
+		border-radius: 0 0 16px 16px !important;
+		color: black !important;
+		border-top: 0px;
+	}
+}
+
+.base-collapse.no-padding {
+	.ant-collapse-content .ant-collapse-content-box {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}
+
+.base-collapse.no-padding-all {
+	.ant-collapse-content .ant-collapse-content-box {
+		padding: 0px !important;
+	}
+	.ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+		padding: 0px !important;
+	}
+}
+
+.base-collapse.have-border {
+	.ant-collapse-content {
+		border: 1px #DEDEDE solid;
+	}
+}
+
+.base-collapse.bg-employee-registration {
+	background:none;
+
+	.ant-collapse-item {
+		border-bottom: none;
+		margin-bottom: 15px;
+	}
+	.ant-collapse-item:last-child {
+		margin-bottom: 0px;
+	}
+	.ant-collapse-header {
+		padding: 24px 24px 20px 24px !important;
+		background: linear-gradient(180deg, #496F77 0%, #1C4651 63%) !important;
+		border-radius: 16px !important;
+
+		.ant-collapse-header-text {
+			padding-inline-end: 0px !important;
+			width: calc(100% - 152px);
+			overflow: hidden;
+		}
+		.ant-collapse-expand-icon {
+			padding-inline-start: 0px !important;
+		}
+		.buttons {
+			width: 152px;
+
+			span {
+				min-width: 104px;
+			}
+		}
+	}
+	.ant-collapse-content {
+		border: 1px #DEDEDE solid;
+	}
+	.ant-collapse-item-active {
+		.ant-collapse-header {
+			border-radius: 16px 16px 0 0 !important;
+		}
+	}
+}
+
+.base-collapse.accordion-margin {
+	background:none;
+
+	.ant-collapse-item {
+		border-bottom: none;
+		margin-bottom: 15px;
+		border-radius: 16px;
+    	overflow: hidden;
+		border: 1px #D6DDE4 solid;
+	}
+	.ant-collapse-header {
+		background: linear-gradient(180deg, #496F77 0%, #1C4651 63%);
+	}
+	.ant-collapse-content-box {
+		padding: 24px !important;
+	}
+}

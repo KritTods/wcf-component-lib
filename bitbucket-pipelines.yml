@@ -1,0 +1,62 @@
+definitions:
+  steps:
+    - step: &SetEnvironmentVariables
+        name: "Set environment variables"
+        script:
+          - echo "export DOCKER_PASS_TOKEN=$DOCKER_PASS_TOKEN" >> .envs
+          - echo "export VERSION=$(grep version package.json | cut -f 2 -d  ':'  | tr -d ' ",')" >> .envs
+          - echo "export ENV=$ENV" >> .envs
+        artifacts:
+          - .envs
+    - step: &BuildImage
+        name: Build and push Image
+        size: 2x
+        image: quay.io/vmoteam/ci-node:v12-gitops
+        caches:
+          - node
+        services: [docker-with-large-memory]
+        script:
+          - source .envs
+          - export IMAGE_FIX=soilfish/wcf-component-lib:${VERSION}
+          - echo $IMAGE_FIX
+          - echo $VERSION
+          - ls -al
+          - docker build -t $IMAGE_FIX .
+          - echo ${DOCKER_PASS_TOKEN} | docker login --username soilfish --password-stdin
+          - docker push $IMAGE_FIX
+        artifacts:
+          paths:
+            - build
+  services:
+    docker:
+      memory: 1024
+    docker-with-large-memory:
+      memory: 2048
+      type: docker
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          deployment: development
+          <<: *SetEnvironmentVariables
+      - step:
+          <<: *BuildImage
+    develop:
+      - step:
+          deployment: development
+          <<: *SetEnvironmentVariables
+      - step:
+          <<: *BuildImage
+    release/*:
+      - step:
+          deployment: staging
+          <<: *SetEnvironmentVariables
+      - step:
+          <<: *BuildImage
+    master:
+      - step:
+          deployment: production
+          <<: *SetEnvironmentVariables
+      - step:
+          <<: *BuildImage

@@ -1,0 +1,24 @@
+@import '../../scss/color-variable.scss';
+
+.base-icon {
+  transition: all 0.2s ease-in-out;
+  color: var(--icon-base-color, var(--text-title-content));
+
+  &-enabled {
+    cursor: pointer;
+    
+    &:hover {
+      color: var(--icon-hover-color, var(--icon-base-color));
+    }
+  }
+
+  &-active {
+    color: var(--icon-active-color);
+  }
+
+  &-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.5;
+    color: var(--icon-disabled-color);
+  }
+}

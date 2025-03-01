@@ -1,0 +1,31 @@
+.base-radio-button-group-dev {
+	.base-radio-button-group .ant-radio-wrapper {
+		border: 1px solid #dedede;
+		border-radius: 4px;
+		width: 100%;
+		min-height: 40px;
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		justify-content: center;
+	}
+
+	.base-radio-button-group .ant-radio-wrapper-checked {
+		border: 1px solid #1c4651;
+		background: #1c4651;
+		color: #e7f3f5;
+	}
+
+	.base-radio-button-group .ant-radio {
+		display: none;
+	}
+
+	.base-radio-button-group .ant-radio + * {
+		display: block;
+		padding: 0;
+		overflow: hidden;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+}

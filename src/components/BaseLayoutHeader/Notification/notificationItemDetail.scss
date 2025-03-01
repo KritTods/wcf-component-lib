@@ -1,0 +1,59 @@
+#HeaderNavbarLayout-HeaderLayout-NotificationList {
+	.notification-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		max-height: 530px;
+		overflow-y: auto;
+		padding-top: 1rem;
+	}
+
+	.notification-detail-item {
+		padding: 10px;
+		border-bottom: 1px solid #dedede;
+
+		&.new {
+			background-color: #e7f3f5;
+		}
+
+		.header {
+			display: flex;
+			align-items: center;
+		}
+
+		.new-badge {
+			background-color: #fff9e5;
+			color: #fbc108;
+			padding: 0.2rem 0.5rem;
+			border-radius: 4px;
+			margin-right: 0.5rem;
+		}
+
+		h3 {
+			margin: 0;
+			font-size: 1.1rem;
+			color: #1c4651;
+		}
+
+		p {
+			color: #1c4651;
+		}
+
+		.footer {
+			display: flex;
+			justify-content: space-between;
+			font-size: 0.9rem;
+			padding: 5px;
+			color: #1c4651;
+
+			&.new {
+				background-color: #e7faf2;
+			}
+
+			.date {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

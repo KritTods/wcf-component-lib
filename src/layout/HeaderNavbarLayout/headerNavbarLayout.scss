@@ -1,0 +1,37 @@
+@import "../../scss/variable.scss";
+
+#HeaderNavbarLayout {
+	display: flex;
+	height: 100vh;
+
+	.navbar-layout {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 56px;
+		height: 100%;
+		background-color: #ededed;
+		z-index: 1000;
+	}
+
+	.content {
+		margin-left: 56px;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		background-color: #ededed;
+
+		.content-body {
+			flex-grow: 1;
+			overflow-y: auto;
+			.centent-home{
+				height: 480px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-image: var(--home-image);
+			}
+		}
+
+	}
+}

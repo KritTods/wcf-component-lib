@@ -1,0 +1,16 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm install
+
+COPY .. .
+
+# Install xdg-utils for xdg-open
+RUN apk add --no-cache xdg-utils
+
+EXPOSE 6006
+
+CMD ["tail", "-f", "/dev/null"]

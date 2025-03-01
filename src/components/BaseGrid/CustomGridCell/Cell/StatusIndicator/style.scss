@@ -1,0 +1,181 @@
+.status-wrapper {
+	display: inline-flex;
+	padding: 8px 16px;
+	height: var(--status-height, 36px);
+	border-radius: 9999px;
+	align-items: center;
+	background-color: var(--status-bg-color, #ffffff);
+	// padding-left: 16px;
+	// padding-right: 16px;
+
+	// .status-dot {
+	// 	width: 10px;
+	// 	height: 10px;
+	// 	border-radius: 100%;
+	// 	background-color: var(--status-dot-color, #000000);
+	// }
+
+	// .status-text {
+	// 	color: var(--status-text-color, #000000);
+	// 	padding-left: 8px;
+	// 	white-space: nowrap;
+	// 	font-size: 18px;
+	// 	line-height: 24px;
+	// 	font-weight: 400;
+	// }
+}
+
+.svgicon svg {
+	fill: var(--status-dot-color, #000000);
+}
+
+.status-text {
+	color: var(--status-text-color, #000000);
+	padding-left: 8px;
+	white-space: nowrap;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.icon-wrapper {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+}
+
+.icon {
+	width: 8px;
+	height: 8px;
+	position: relative;
+}
+
+/* Circle */
+.icon.circle {
+	border-radius: 50%;
+	background-color: var(--status-dot-color, #000000);
+}
+
+/* Square */
+.icon.square {
+	border-radius: 5%;
+	background-color: var(--status-dot-color, #000000);
+}
+
+/* Rounded Square */
+.icon.rounded-square {
+	border-radius: 25%;
+	background-color: var(--status-dot-color, #000000);
+}
+
+/* Diamond */
+.icon.diamond {
+	transform: rotate(45deg);
+	background-color: var(--status-dot-color, #000000);
+}
+
+/* Triangle */
+.icon.triangle {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent; /* ปรับขนาดให้เหลือ 4px */
+	border-right: 4px solid transparent; /* ปรับขนาดให้เหลือ 4px */
+	border-bottom: 8px solid var(--status-dot-color, #000000); /* ปรับขนาดให้เหลือ 8px */
+	background-color: transparent;
+}
+
+.icon.star {
+	position: relative;
+	width: 8px; /* กำหนดความกว้างเป็น 8px */
+	height: 8px; /* กำหนดความสูงเป็น 8px */
+	background-color: var(--status-dot-color, #000000);
+	clip-path: polygon(
+		50% 0%,
+		61% 35%,
+		98% 35%,
+		68% 57%,
+		79% 91%,
+		50% 70%,
+		21% 91%,
+		32% 57%,
+		2% 35%,
+		39% 35%
+	); /* ใช้ clip-path เพื่อสร้างรูปดาว */
+}
+
+/* Plus Sign */
+.icon.plus {
+	position: relative;
+}
+.icon.plus::before,
+.icon.plus::after {
+	content: "";
+	position: absolute;
+	background-color: var(--status-dot-color, #000000);
+}
+.icon.plus::before {
+	width: 2px; /* ความกว้างของแนวตั้ง */
+	height: 8px; /* ความสูงเต็มของไอคอน */
+	top: 0; /* เริ่มจากด้านบน */
+	left: 3px; /* จัดกลางในแนวนอน */
+}
+
+.icon.plus::after {
+	width: 8px; /* ความกว้างเต็มของไอคอน */
+	height: 2px; /* ความสูงของแนวนอน */
+	top: 3px; /* จัดกลางในแนวนอน */
+	left: 0; /* เริ่มจากด้านซ้าย */
+}
+
+/* Left Arrow */
+.icon.left-arrow {
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-right: 8px solid var(--status-dot-color, #000000);
+	background-color: transparent;
+}
+
+/* Hexagon */
+.icon.hexagon {
+	position: relative;
+	width: 4px; /* กำหนดความกว้างเป็น 7px */
+	height: 3px; /* กำหนดความสูงเป็น 8px */
+	background-color: var(--status-dot-color, #000000);
+	margin: 2.5px 0; /* ปรับระยะห่าง */
+}
+
+.icon.hexagon {
+	width: 8px;
+	height: 8px;
+	position: relative;
+	background-color: var(--status-dot-color, #000000);
+	padding-bottom: 86.6%; /* = 100% * tan(60°) */
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.star2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 8px;
+	height: 8px;
+	background-color: #c83b3b;
+	clip-path: polygon(
+		50% 0%,
+		61% 35%,
+		98% 35%,
+		68% 57%,
+		79% 91%,
+		50% 70%,
+		21% 91%,
+		32% 57%,
+		2% 35%,
+		39% 35%
+	);
+}

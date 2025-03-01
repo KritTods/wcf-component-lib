@@ -1,0 +1,23 @@
+.extend-container {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	gap: 10px;
+	right: -100px;
+	top: 25px;
+}
+
+.orange-line {
+	width: 50px;
+	height: 75px;
+	background: inherit;
+	border-top: 2px solid #f89862;
+	border-right: 2px solid #f89862;
+	border-bottom: 2px solid #f89862;
+}
+
+.days-difference {
+	color: #f89862;
+	font-size: 20px;
+	font-weight: 600;
+}

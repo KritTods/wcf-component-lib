@@ -1,0 +1,100 @@
+// @import "../../scss/color-variable.scss";
+@import "../../../../../scss/color-variable.scss";
+
+// $icon-class: "icon";
+
+.custom-cell-button-icon {
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	border-radius: 99%;
+	padding: 6px;
+
+	&:hover,
+	&:active {
+		opacity: 50%;
+	}
+
+	&.edit {
+		color: $primary;
+		background-color: $waiting-vbright;
+	}
+	&.view {
+		color: $primary;
+		background-color: $primary-very-bright;
+	}
+
+	&.delete {
+		color: $error;
+		background-color: $error-vbright;
+	}
+
+	&.printer {
+		color: $new;
+		background-color: $primary-very-bright;
+	}
+
+	&.order {
+		color: $pending-vdark;
+		background-color: $pending-vbright;
+	}
+
+	&.download {
+		color: $success;
+		background-color: $success-vbright;
+	}
+	&.upload {
+		color: $wainting-dark;
+		background-color: $wainting-vbright;
+	}
+	&.add {
+		color: $primary;
+		background-color: $success-vbright;
+	}
+	&.search {
+		color: $secondary-yellow;
+		background-color: $waiting-vbright;
+	}
+	&.cancel-check {
+		color: $error;
+		background-color: $error-vbright;
+	}
+	&.send-dollars {
+		color: $primary;
+		background-color: $primary-very-bright;
+	}
+	&.success-icon {
+		color: $success;
+		background-color: $success-vbright;
+	}
+	&.log-no-access-icon {
+		color: $error;
+		background-color: $error-vbright;
+	}
+	&.coin-icon {
+		color: $primary;
+		background-color: $primary-very-bright;
+	}
+	&.data-transfer-both-icon {
+		color: $success;
+		background-color: $success-vbright;
+	}
+	&.dollar_circle_icon {
+		color: $pending;
+		background-color: $pending-vbright;
+	}
+	&.clock_rotate_right_icon {
+		color: $pending-vdark;
+		background-color: $new-vbright;
+	}
+}
+
+.disabled {
+	width: 36px;
+	height: 36px;
+	cursor: default !important;
+	border-radius: 99%;
+	padding: 6px;
+	color: $placeholder-text;
+	background-color: $disable;
+}

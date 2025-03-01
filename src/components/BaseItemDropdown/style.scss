@@ -1,0 +1,20 @@
+
+//for change background color blue
+.custom-bg-color-blue.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+	background-color: #e7f3f5 !important;
+}
+
+.custom-bg-color-blue .ant-select-selector > span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-bg-color-blue .ant-select-selector:focus-within {
+	background-color: #ffffff !important;
+}
+
+.custom-bg-color-blue.ant-select-outlined.ant-select-status-error:not(.ant-select-customize-input) .ant-select-selector {
+	background-color: #ffffff !important;
+}
+

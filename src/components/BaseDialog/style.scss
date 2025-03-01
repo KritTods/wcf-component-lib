@@ -1,0 +1,25 @@
+.ant-modal .ant-modal-content {
+	border-radius: 16px !important;
+}
+
+.over-flow.ant-modal {
+	height: 100% !important;
+	width: 100% !important;
+	max-width: var(--modal-max-width, 80vw);
+	max-height: var(--modal-max-height, 80vh);
+}
+
+.over-flow.ant-modal {
+	.ant-modal-content {
+		border-radius: 16px !important; /* ทำให้มุมโค้งมน */
+		height: 100% !important; /* กำหนดให้เนื้อหามีความสูงเต็มที่ */
+	}
+
+	.ant-modal-body {
+		height: 100% !important; /* ทำให้ body มีความสูงเต็มที่ */
+		overflow-y: auto; /* เปิด scroll เมื่อเนื้อหาเกิน */
+	}
+}
+.over-flow.ant-modal div[tabindex="-1"] {
+	height: 100% !important; /* ทำให้ div ที่ไม่มี class นี้มีความสูงเต็มที่ */
+}

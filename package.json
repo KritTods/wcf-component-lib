@@ -1,0 +1,91 @@
+{
+    "name": "wcf-component-lib",
+    "version": "1.0.2",
+    "description": "",
+    "type": "module",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "test": "vitest run",
+        "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+        "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+        "build": "tsc && vite build",
+        "test-watch": "vitest",
+        "test:ui": "vitest --ui",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build",
+        "setup": "npm i & npm link"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@chromatic-com/storybook": "^1.5.0",
+        "@storybook/addon-essentials": "^8.1.9",
+        "@storybook/addon-interactions": "^8.2.6",
+        "@storybook/addon-links": "^8.1.9",
+        "@storybook/addon-onboarding": "^8.1.9",
+        "@storybook/addon-styling-webpack": "^1.0.0",
+        "@storybook/blocks": "^8.1.9",
+        "@storybook/react": "^8.1.9",
+        "@storybook/react-vite": "^8.1.9",
+        "@storybook/test": "^8.2.6",
+        "@testing-library/jest-dom": "^6.4.6",
+        "@testing-library/react": "^16.0.0",
+        "@types/jest": "^29.5.12",
+        "@types/js-cookie": "^3.0.6",
+        "@types/lodash": "^4.17.13",
+        "@types/react": "^18.3.3",
+        "@typescript-eslint/eslint-plugin": "^7.13.0",
+        "@typescript-eslint/parser": "^7.13.0",
+        "autoprefixer": "^10.4.19",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.34.2",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-storybook": "^0.8.0",
+        "husky": "^9.0.11",
+        "jsdom": "^24.1.0",
+        "lint-staged": "^15.2.7",
+        "postcss": "^8.4.38",
+        "prettier": "^3.3.2",
+        "storybook": "^8.1.9",
+        "tailwindcss": "^3.4.4",
+        "typescript": "^5.4.5",
+        "vite": "^5.3.1",
+        "vite-plugin-dts": "^3.9.1",
+        "vitest": "^1.6.0"
+    },
+    "peerDependencies": {
+        "@reduxjs/toolkit": "^2.2.5",
+        "react": "^18.3.1",
+        "react-redux": "^9.1.2"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "npm run format",
+            "npm run lint",
+            "npm run test"
+        ]
+    },
+    "dependencies": {
+        "@ant-design/icons": "^5.3.7",
+        "antd": "^5.18.2",
+        "axios": "^1.7.3",
+        "clsx": "^2.1.1",
+        "dayjs": "^1.11.13",
+        "iconoir-react": "^7.8.0",
+        "jose": "^5.6.3",
+        "js-cookie": "^3.0.5",
+        "lodash": "^4.17.21",
+        "next": "^14.2.5",
+        "sass": "^1.77.8",
+        "styled-components": "^6.1.13",
+        "tailwind-merge": "^2.5.4"
+    }
+}

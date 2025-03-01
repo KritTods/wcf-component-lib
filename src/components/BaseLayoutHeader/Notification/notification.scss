@@ -1,0 +1,129 @@
+#HeaderNavbarLayout-HeaderLayout-Notification {
+	position: relative;
+
+	.notification-icon-container {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		// background-color: #ffd700;
+		border-radius: 8px;
+		padding: 8px;
+	}
+
+	.notification-dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-10px);
+		background-color: white;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+		margin-top: 10px;
+		opacity: 0;
+		pointer-events: none;
+		transition:
+			opacity 0.3s ease,
+			transform 0.3s ease;
+		z-index: 1000;
+		width: 430px;
+		padding: 12px 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid white;
+		}
+
+		&.open {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+			pointer-events: auto;
+		}
+	}
+}
+
+.notification-card {
+	height: 600px;
+}
+.notification-detail {
+	height: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tabs-container {
+	display: flex;
+	border: 1px solid #d9d9d9;
+	overflow: hidden;
+	border-radius: 2px;
+	width: 300px;
+	.tab-item {
+		flex: 1;
+		text-align: center;
+		padding: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		color: #1c4651;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
+
+		&:not(:last-child) {
+			border-right: 1px solid #e5e7eb;
+		}
+
+		&.active {
+			background-color: #17394a;
+			color: white;
+		}
+
+		&:hover {
+			background-color: #e7f3f5;
+			color: #1c4651;
+		}
+	}
+}
+
+.notification-item-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.icon-notification {
+		height: 73px;
+		max-width: 50px;
+		margin: 0 auto 8px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.badge-new {
+		.ant-badge-count {
+			top: 15px;
+			padding: px;
+			background-color: #ffd700;
+			color: #1c4651;
+			font-size: 16px;
+		}
+	}
+
+	.notification-label {
+		font-size: 16px;
+		color: #434649;
+		border-radius: 8px;
+		padding: 5px;
+
+		&.active {
+			font-size: 16px;
+			color: #1c4651;
+			background-color: #e7f3f5;
+		}
+	}
+}

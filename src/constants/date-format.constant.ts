@@ -1,0 +1,31 @@
+export enum DateFormat {
+	DDMMYYYY = "DD/MM/YYYY",
+	YYYYMMDD = "YYYY-MM-DD",
+	YYYYMM = "YYYY-MM",
+	MMYYYY = "MM/YYYY",
+	YYYY = "YYYY",
+	MM = "MM",
+	_YYYYMMDD = "YYYYMMDD",
+	HHmm = "HH:mm",
+	DDMMYYYYHHmm = "DD/MM/YYYY HH:mm",
+	DDMMYYYYHHmmss = "DD/MM/YYYY HH:mm:ss",
+	HHmmss = "HH:mm:ss",
+	YYYYMMDDHHMMSS = "YYYY-MM-DD HH:mm:ss",
+	YYYYMMDDHHMMSSms = "YYYY-MM-DD HH:mm:ss.ms",
+	YYYYMMDDHHMMSSSSS = "YYYY-MM-DD HH:mm:ss.SSS",
+	_DDMMYYYY = "DDMMYYYY",
+	YYYYMMDDTHHmmss = "YYYY-MM-DDTHH:mm:ss",
+	YYYYMMDDTHHmmssssssss = "YYYY-MM-DDTHH:mm:ss.ssssss",
+	YYYYMMDDT000000 = "YYYY-MM-DDT00:00:00",
+	YYYYMMDDT000000000Z = "YYYY-MM-DDT00:00:00.000Z",
+	YYYYMMDDT235959000Z = "YYYY-MM-DDT23:59:59.000Z",
+}
+
+export enum DateFormatBuddhist {
+	DDMMBB = "DD/MM/BB",
+	DDMMBBBB = "DD/MM/BBBB",
+	DDMMBBBBHHmmss = "DD/MM/BBBB HH:mm:ss",
+	DDMMMBB = "DD MMM BB" /** Ex: 18 ก.ย. 67 */,
+	DDMMMBBBB = "DD MMM BBBB" /** Ex: 18 ก.ย. 2567 */,
+	DDMMMMBBBB = "DD MMMM BBBB" /** Ex: 18 กันยายน 2567 */,
+}

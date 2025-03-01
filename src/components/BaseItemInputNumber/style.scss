@@ -1,0 +1,19 @@
+@import "../../scss/color-variable.scss";
+
+.hide-arrow .ant-input-number-handler-wrap {
+  display: none !important;
+}
+
+.base-item-input-number {
+  &.text-left .ant-input-number-input {
+    text-align: left !important;
+  }
+  
+  &.text-center .ant-input-number-input {
+    text-align: center !important;
+  }
+  
+  &.text-right .ant-input-number-input {
+    text-align: right !important;
+  }
+}

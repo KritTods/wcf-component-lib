@@ -1,0 +1,13 @@
+.custom-base-toast.success {
+	background-color: #f6ffed;
+	border: solid 1px #b7eb8f;
+}
+
+.custom-base-toast {
+	width: calc(100vw - 68px) !important;
+}
+
+.custom-base-toast.error {
+	background-color: #ffeded;
+	border: solid 1px #ebb58f;
+}

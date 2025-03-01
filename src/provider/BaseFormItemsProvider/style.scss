@@ -1,0 +1,43 @@
+.base-form-items-provider {
+	.ant-form-item {
+		margin-bottom: 24px !important;
+	}
+	.ant-form-item-explain {
+		display: flex;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.ant-form-item-explain-error {
+		display: inline;
+	}
+	.ant-form-item-explain-error:not(:first-child)::before {
+		padding-left: 5px;
+		content: ", ";
+	}
+}
+
+// .custom-form-item .ant-form-item-explain-error {
+// 	position: absolute;
+// 	max-width: 100%;
+// 	white-space: nowrap;
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// 	// bottom: -2px;
+// }
+
+.custom-form-item {
+	.ant-form-item-explain {
+		position: absolute;
+		max-width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.base-form-items-provider.noMarginItemsProvider {
+	.ant-form-item {
+		margin-bottom: 0 !important;
+	}
+}

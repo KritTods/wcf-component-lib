@@ -1,0 +1,23 @@
+.detail-bar {
+    background: linear-gradient(180deg, #496F77 0%, #1C4651 63%);
+    overflow: hidden;
+    min-height: 82px;
+    border-radius: 99px;
+    padding: 15px 0 15px 15.7px;
+
+    .img-absolute-left{
+        position: absolute;
+        top: 10.7px;
+        left:0;
+    }
+    .img-absolute-right{
+        position: absolute;
+        top: 10.7px;
+        right: 157.17px
+    }
+    .img-user {
+        padding: 14px 13.77px;
+        background: #FBC108;   
+        margin-right: 15.14px;
+    }
+}

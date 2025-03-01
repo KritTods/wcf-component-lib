@@ -1,0 +1,15 @@
+@import "../../scss/color-variable.scss";
+
+.base-button-save {
+	font-size: 15px;
+	font-weight: 400;
+	width: 137px;
+	height: 40px;
+	border-radius: 99px !important;
+	background-color: $primary;
+	border: 0px solid #f16065;
+	color: white;
+	&:hover {
+		background-color: $primary !important;
+	}
+}

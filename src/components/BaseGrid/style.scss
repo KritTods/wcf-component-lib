@@ -1,0 +1,146 @@
+@import "../../scss/variable.scss";
+
+.even-row {
+	background-color: #fff; /* สีสำหรับแถวที่เป็นคู่ */
+}
+
+.odd-row {
+	background-color: #e6eff5; /* สีสำหรับแถวที่เป็นคี่ */
+}
+
+.ant-table-column-sorter {
+	display: none !important;
+}
+
+// .ant-empty-image {
+// 	width: 408px !important; /* ปรับขนาดตามที่ต้องการ */
+// 	height: 408px !important; /* ปรับขนาดตามที่ต้องการ */
+// 	background-image: url("https://api-dev-wcf.soilfish.co/mw/api/asset/empty-grid.svg");
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// }
+
+.ant-empty-description,
+.ant-empty-image svg {
+	display: none; /* ซ่อน SVG เดิม */
+}
+
+.ant-empty-normal {
+	display: flex; /* แสดงภาพและข้อความว่า "No Data" */
+	justify-content: center;
+	align-items: center;
+}
+
+thead.ant-table-thead .ant-table-cell {
+	@each $property, $value in $text-help {
+		#{$property}: #{$value} !important;
+	}
+	border-color: #1c4651 !important;
+}
+
+.hide-header {
+	.ant-table-thead {
+		display: none;
+	}
+}
+
+.ant-table-cell {
+	// ตรวจสอบจำนวน colspan
+	&[colspan] {
+		// ถ้า colspan มากกว่า 2 กำหนด padding = 0
+		&:not([colspan="1"]):not([colspan="2"]) {
+			padding: 0 !important;
+		}
+	}
+}
+
+.ant-table-title {
+	background-color: #1c4651;
+	color: white;
+	border: 1px solid var(--Color-Deep-Green-Deep-Green900, #163841);
+	height: 50px;
+}
+
+.ant-table-summary {
+	background-color: #000000; /* สีสำหรับแถวที่เป็นคี่ */
+	z-index: 0;
+	border-bottom-width: 1px;
+}
+.ant-table-thead {
+	background-color: #000000;
+}
+/* Ensures the dropdown options are displayed inline */
+.horizontal-dropdown {
+	.rc-virtual-list-holder-inner {
+		flex-direction: row !important; /* Keep the items in a row */
+		display: flex;
+		flex-wrap: wrap;
+		max-height: auto;
+		overflow-y: auto;
+	}
+
+	.ant-select-item {
+		display: inline-flex;
+		padding: 8px 16px;
+		background-color: #f1f4f7;
+		border-radius: 10px;
+		margin-bottom: 8px; /* Add margin to handle spacing for new line */
+	}
+
+	.ant-select-item-option-selected {
+		background: #00a15e;
+		color: white;
+		border-radius: 10px !important;
+	}
+
+	.ant-select-item-option-active {
+		background-color: #d3d3d3 !important;
+	}
+
+	.ant-select-item-option {
+		padding: 5px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+	}
+}
+
+.base-grid.hide-header-base-grid {
+	.ant-table-thead {
+		display: none;
+	}
+}
+
+.base-grid {
+	&.is-have-border-bottom-left-right {
+		.ant-table-tbody {
+			.ant-table-row:last-child {
+				.ant-table-cell {
+					&:last-child {
+						border-bottom-right-radius: 1rem !important;
+					}
+					&:first-child {
+						border-bottom-left-radius: 1rem !important;
+					}
+				}
+			}
+		}
+	}
+	&.is-content-small-font {
+		td.ant-table-cell {
+			padding: 10px !important;
+			font-size: 12px !important;
+			line-height: 24px !important;
+		}
+	}
+}
+
+.remove-border-header {
+	.ant-table-thead {
+		border-radius: 16px 0;
+		background-color: #e7f3f5;
+	}
+	.ant-table-wrapper .ant-table-thead >tr>th{
+		border-bottom: none;
+	}
+}

@@ -1,0 +1,358 @@
+  
+// Primary
+$primary: #1c4651;
+.bg-primary {
+	background-color: $primary;
+}
+
+.text-primary {
+	color: $primary;
+}
+
+$primary-dark: #163841;
+.bg-primary-dark {
+	background-color: $primary-dark;
+}
+
+.text-primary-dark {
+	color: $primary-dark;
+}
+
+$primary-bright: #779097;
+.bg-primary-bright {
+	background-color: $primary-bright;
+}
+
+.text-primary-bright {
+	color: $primary-bright;
+}
+
+$primary-very-bright: #e7f3f5;
+.bg-primary-very-bright {
+	background-color: $primary-very-bright;
+}
+
+.text-primary-very-bright {
+	color: $primary-very-bright;
+}
+
+$secondary: #fbc108;
+.bg-secondary {
+	background-color: $secondary;
+}
+
+.text-secondary {
+	color: $secondary;
+}
+
+$secondary-yellow: #c99a06;
+.bg-secondary-yellow {
+	background-color: $secondary-yellow;
+}
+
+.text-secondary-yellow {
+	color: $secondary-yellow;
+}
+
+$secondary-very-bright: #fff9e5;
+.bg-secondary-very-bright {
+	background-color: $secondary-very-bright;
+}
+
+.text-secondary-very-bright {
+	color: $secondary-very-bright;
+}
+
+// text-base
+$title-content: #212121;
+.bg-title-content {
+	background-color: $title-content;
+}
+
+.text-title-content {
+	color: $title-content;
+}
+
+$description-icon-form-divider: #4b5760;
+.bg-description-icon-form-divider {
+	background-color: $description-icon-form-divider;
+}
+
+.text-description-icon-form-divider {
+	color: $description-icon-form-divider;
+}
+
+$placeholder-text: #bababa;
+.bg-placeholder-text {
+	background-color: $placeholder-text;
+}
+
+.text-placeholder-text {
+	color: $placeholder-text;
+}
+
+$disable: #ededed;
+.bg-disable {
+	background-color: $disable;
+}
+
+.text-disable {
+	color: $disable;
+}
+$border: #dedede;
+.bg-border {
+	background-color: $border;
+}
+
+.text-border {
+	color: $border;
+}
+
+$background: #f1f4f7;
+.background {
+	color: $background;
+}
+
+$white-text: #ffffff;
+.white-text {
+	color: $white-text;
+}
+
+$link: #1a6ca8;
+.bg-link {
+	background-color: $link;
+}
+
+.text-link {
+	color: $link;
+}
+
+$button-cancel: #dedede;
+.button-cancel {
+	color: $button-cancel;
+}
+
+// status
+$success: #09aa6a;
+.bg-success {
+	background-color: $success;
+}
+
+.text-success {
+	color: $success;
+}
+
+$success-vbright: #e7faf2;
+.bg-success-vbright {
+	background-color: $success-vbright;
+}
+
+.text-success-vbright {
+	color: $success-vbright;
+}
+
+$waiting: #fbc108;
+.bg-waiting {
+	background-color: $waiting;
+}
+
+.text-waiting {
+	color: $waiting;
+}
+
+$waiting-vbright: #fff9e5;
+.bg-waiting-vbright {
+	background-color: $waiting-vbright;
+}
+
+.text-waiting-vbright {
+	color: $waiting-vbright;
+}
+
+$error: #c42828;
+.bg-error {
+	background-color: $error;
+}
+
+.text-error {
+	color: $error;
+}
+
+$error-vbright: #f9eaea;
+.bg-error-vbright {
+	background-color: $error-vbright;
+}
+
+.text-error-vbright {
+	color: $error-vbright;
+}
+
+$alert: #fde69c;
+.bg-alert {
+	background-color: $alert;
+}
+
+.text-alert {
+	color: $alert;
+}
+
+$pending: #6666b3;
+.bg-pending {
+	background-color: $pending;
+}
+
+.text-pending {
+	color: $pending;
+}
+
+$pending-vbright: #e6e6f2;
+.bg-pending-vbright {
+	background-color: $pending-vbright;
+}
+
+.text-pending-vbright {
+	color: $pending-vbright;
+}
+
+$pending-vdark: #000080;
+.bg-pending-vdark {
+	background-color: $pending-vdark;
+}
+
+.text-pending-vdark {
+	color: $pending-vdark;
+}
+$wainting: #f89862;
+.bg-wainting {
+	background-color: $wainting;
+}
+
+.text-wainting {
+	color: $wainting;
+}
+
+$wainting-vbright: #fef0e9;
+.bg-wainting-vbright {
+	background-color: $wainting-vbright;
+}
+
+.text-wainting-vbright {
+	color: $wainting-vbright;
+}
+
+$wainting-dark: #f56c1f;
+.bg-wainting-dark {
+	background-color: $wainting-dark;
+}
+
+.text-wainting-dark {
+	color: $wainting-dark;
+}
+
+$new: #176197;
+.bg-new {
+	background-color: $new;
+}
+
+.text-new {
+	color: $new;
+}
+
+$new-vbright: #e6eff5;
+.bg-new-vbright {
+	background-color: $new-vbright;
+}
+
+.text-new-vbright {
+	color: $new-vbright;
+}
+
+$inactive: #121212;
+.bg-inactive {
+	background-color: $inactive;
+}
+
+.text-inactive {
+	color: $inactive;
+}
+
+$inactive-vbright: #ededed;
+.bg-inactive-vbright {
+	background-color: $inactive-vbright;
+}
+
+.text-inactive-vbright {
+	color: $inactive-vbright;
+}
+
+$red-400: #e29494;
+
+//Gradient
+$primary-gradient: linear-gradient(to bottom right, $primary, $primary-dark);
+$secondary-gradient: linear-gradient(
+	to bottom right,
+	$secondary,
+	$secondary-yellow
+);
+$collapse-header-primary-gradient: linear-gradient(180deg, #496F77 0%, $primary 63%);
+.bg-collapse-header-primary-gradient {
+	background: $collapse-header-primary-gradient;
+}
+
+:root {
+    // Primary colors
+    --text-primary: #{$primary};
+    --text-primary-dark: #{$primary-dark};
+    --text-primary-bright: #{$primary-bright};
+    --text-primary-very-bright: #{$primary-very-bright};
+  
+    // Secondary colors
+    --text-secondary: #{$secondary};
+    --text-secondary-yellow: #{$secondary-yellow};
+    --text-secondary-very-bright: #{$secondary-very-bright};
+  
+    // Text base colors
+    --text-title-content: #{$title-content};
+    --text-description-icon-form-divider: #{$description-icon-form-divider};
+    --text-placeholder-text: #{$placeholder-text};
+    --text-disable: #{$disable};
+    --text-border: #{$border};
+    --text-background: #{$background};
+    --text-white: #{$white-text};
+    --text-link: #{$link};
+    --text-button-cancel: #{$button-cancel};
+  
+    // Status colors
+    --text-success: #{$success};
+    --text-success-vbright: #{$success-vbright};
+    
+    --text-waiting: #{$waiting};
+    --text-waiting-vbright: #{$waiting-vbright};
+    
+    --text-error: #{$error};
+    --text-error-vbright: #{$error-vbright};
+    
+    --text-alert: #{$alert};
+    
+    --text-pending: #{$pending};
+    --text-pending-vbright: #{$pending-vbright};
+    --text-pending-vdark: #{$pending-vdark};
+    
+    --text-wainting: #{$wainting};
+    --text-wainting-vbright: #{$wainting-vbright};
+    --text-wainting-dark: #{$wainting-dark};
+    
+    --text-new: #{$new};
+    --text-new-vbright: #{$new-vbright};
+    
+    --text-inactive: #{$inactive};
+    --text-inactive-vbright: #{$inactive-vbright};
+  
+    // Additional colors
+    --text-red-400: #{$red-400};
+  
+    // Gradients
+    --gradient-primary: #{$primary-gradient};
+    --gradient-secondary: #{$secondary-gradient};
+    --gradient-collapse-header-primary: #{$collapse-header-primary-gradient};
+  }

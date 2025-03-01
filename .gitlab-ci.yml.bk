@@ -1,0 +1,25 @@
+default:
+  tags:
+    - g3
+
+stages:
+  - build
+
+variables:
+  GIT_STRATEGY: clone
+#  DOCKER_HOST: tcp://192.168.5.93:2375
+
+build:
+  stage: build
+  script:
+    - echo "Build lib..."
+    - node -v 
+    - npm -v
+    #- npm install
+    #- npm run build
+    - ls
+    #- npm cache clean --force
+#    - npm link
+    - docker build -t wcf-component-lib.1.0.0 .
+  only:
+    - main-g3

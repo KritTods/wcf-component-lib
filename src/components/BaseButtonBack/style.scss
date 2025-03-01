@@ -1,0 +1,21 @@
+@import "../../scss/colors-theme.scss";
+
+.button-back {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: #1c4651;
+	background-color: #f4f7fa;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+
+	&:hover {
+		background-color: #e0e7ec !important;
+		color: #1c4651 !important;
+	}
+}
+

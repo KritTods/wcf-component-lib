@@ -1,0 +1,22 @@
+.ant-modal .ant-modal-content {
+	border-radius: 16px !important;
+}
+.base-modal-form {
+    
+
+    &.content-padding-no {
+      .ant-modal-body {
+        padding: 0;  
+      }
+  
+      .ant-modal-content {
+        padding: 0;
+      }
+  
+      .ant-modal-header,
+      .ant-modal-footer {
+        padding: 0;
+      }
+    }
+  }
+  

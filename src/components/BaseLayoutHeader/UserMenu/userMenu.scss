@@ -1,0 +1,67 @@
+#HeaderNavbarLayout-HeaderLayout-UserMenuComponent {
+	position: relative;
+	display: inline-block;
+
+	.icon-container {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		padding: 1px;
+		&.active {
+			background-color: #e7f3f5;
+			border-radius: 50px;
+		}
+	}
+
+	.icon-container:hover {
+		background-color: #e7f3f5;
+		border-radius: 50px;
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background-color: white;
+		border-radius: 0;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+		margin-top: 20px;
+		min-width: 150px;
+		z-index: 1000;
+		opacity: 0;
+		transform: translateY(-10px);
+		transition:
+			opacity 0.3s ease,
+			transform 0.3s ease;
+		pointer-events: none;
+
+		&.open {
+			opacity: 1;
+			transform: translateY(0);
+			pointer-events: auto;
+		}
+
+		.menu-item {
+			padding: 12px 16px;
+			cursor: pointer;
+			border-top: 1px solid #dedede;
+
+			&:hover {
+				background-color: #e7f3f5;
+			}
+
+			&.header {
+				border-top: 0;
+			}
+
+			&.logout {
+				display: flex;
+				align-items: center;
+
+				.logout-icon {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}

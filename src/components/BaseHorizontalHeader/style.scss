@@ -1,0 +1,18 @@
+.base-horizontal-header {
+	overflow: hidden;
+
+	.ant-divider-horizontal.ant-divider-with-text-left::before {
+		width: 0 !important;
+	}
+
+	.ant-divider .ant-divider-inner-text {
+		padding-inline: 16px !important;
+	}
+
+	.icon {
+		width: 40px;
+		height: 40px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+}

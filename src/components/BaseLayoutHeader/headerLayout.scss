@@ -1,0 +1,16 @@
+#HeaderNavbarLayout-BaseLayoutHeader {
+    margin: 0px 16px 16px 16px;
+    padding: 24px 24px 32px 24px;
+    background-color: #ffffff; 
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+	.vertical-line {
+		width: 2px;
+		height: 40px;
+		background-color: #d3d3d3;
+		margin: 0 auto;
+	}
+	.profile {
+		min-width: 200px;
+	}
+}

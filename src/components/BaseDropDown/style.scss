@@ -1,0 +1,39 @@
+@import "../../scss/color-variable.scss";
+
+$background-color: #e7faf2;
+$color: #212121;
+$font-weight:500;
+
+$font-size-menu: 16px;
+$font-weight-menu:700;
+$line-height-menu: 32px;
+
+.ant-select-outlined :not(.ant-select-customize-input) .ant-select-selector {
+	border-radius: 0.25rem !important;
+}
+.ant-select-outlined.ant-select-multiple .ant-select-selection-item {
+	border-radius: 100px !important;
+	background: $background-color;
+	color: $color;
+	font-weight: $font-weight;
+	border: 0 !important;
+	margin-inline-end: 10px;
+	padding-inline-start: 16px !important;
+    padding-inline-end: 16px !important;
+	svg {
+		color:black;
+	}
+}
+.ant-dropdown {
+	min-width: 316px !important;
+	.ant-dropdown-menu {
+		padding: 8px !important;
+		.ant-dropdown-menu-item {
+			padding: 8px 0 !important;
+			font-size: $font-size-menu;
+			font-weight: $font-weight-menu;
+			line-height: $line-height-menu;
+			color: $primary;
+		}
+	}
+}

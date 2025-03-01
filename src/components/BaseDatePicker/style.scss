@@ -1,0 +1,20 @@
+@import "../../scss/color-variable.scss";
+@import "../../scss/font.scss";
+
+.ant-picker-dropdown
+	.ant-picker-cell-in-view.ant-picker-cell-today
+	.ant-picker-cell-inner::before,
+.ant-picker-dropdown
+	.ant-picker-cell-in-view.ant-picker-cell-selected:not(
+		.ant-picker-cell-disabled
+	)
+	.ant-picker-cell-inner {
+	border-radius: 100%;
+	border-color: $primary-dark;
+}
+
+.ant-picker-large .ant-picker-input > input {
+	@each $property, $value in $date-picker-size {
+		#{$property}: #{$value};
+	}
+}

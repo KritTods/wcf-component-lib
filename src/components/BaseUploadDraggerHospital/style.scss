@@ -1,0 +1,45 @@
+@import "../../scss/color-variable.scss";
+@import "../../scss/font.scss";
+
+.base-upload-dragger-hospital.style1 {
+	.ant-upload.ant-upload-drag {
+		background-color: #e3f5f2;
+		border-radius: 8px;
+	}
+}
+.base-upload-dragger-hospital.style2 {
+	.ant-upload.ant-upload-drag {
+		background-color: #bbc8cb;
+		border-radius: 2px;
+	}
+}
+
+.base-upload-dragger-hospital {
+	.ant-upload.ant-upload-drag {
+		border: 0px;
+		.ant-upload.ant-upload-btn {
+			padding: 11px 16px 16px;
+		}
+		.ant-upload-drag-icon svg {
+			color: $primary;
+		}
+		.ant-upload-text {
+			width: 100%;
+			max-width: 360px;
+			margin: 0 auto 10px;
+			padding: 6px 0;
+			background-color: $primary;
+			border-radius: 99px;
+			color: white;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 700;
+		}
+		.ant-upload-hint {
+			color: $primary;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 400;
+		}
+	}
+}

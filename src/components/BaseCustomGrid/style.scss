@@ -1,0 +1,179 @@
+@import "../../scss/variable.scss";
+
+.even-row {
+	background-color: #fff; /* สีสำหรับแถวที่เป็นคู่ */
+}
+
+.odd-row {
+	background-color: #e6eff5; /* สีสำหรับแถวที่เป็นคี่ */
+}
+
+.ant-table-column-sorter {
+	display: none !important;
+}
+
+.vertical-borders-only .ant-table-tbody > tr > td {
+	border-top: none; /* Remove horizontal borders */
+	border-bottom: none; /* Remove horizontal borders */
+	border-left: none;
+}
+
+.vertical-borders-only .ant-table-thead > tr > th {
+	border-top: none; /* Remove horizontal borders from the header */
+	border-bottom: none; /* Remove horizontal borders from the header */
+}
+
+
+.ant-table-cell {
+	padding: 1px;
+}
+.ant-table-row {
+	height: 3rem;
+}
+.ant-empty-description,
+.ant-empty-image svg {
+	display: none; /* ซ่อน SVG เดิม */
+}
+
+.ant-empty-normal {
+	display: flex; /* แสดงภาพและข้อความว่า "No Data" */
+	justify-content: center;
+	align-items: center;
+}
+
+.ant-table-row-expand-icon-cell {
+	position: relative;
+
+	.ant-table-row-collapsed:after {
+		content: "\E61D";
+		font-family: "anticon" !important;
+		font-style: normal;
+		vertical-align: baseline;
+		text-align: center;
+		text-transform: none;
+		text-rendering: auto;
+
+		right: 16px;
+		top: 0;
+		display: inline-block;
+		transform: scale(0.66666667) rotate(0deg);
+		transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+		zoom: 1;
+	}
+
+	.ant-table-row-expanded:after {
+		content: "\E61D";
+		font-family: "anticon" !important;
+		font-style: normal;
+		vertical-align: baseline;
+		text-align: center;
+		text-transform: none;
+		text-rendering: auto;
+
+		right: 16px;
+		top: 0;
+		display: inline-block;
+		transform: rotate(180deg) scale(0.75);
+		transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+		zoom: 1;
+	}
+}
+
+thead.ant-table-thead .ant-table-cell {
+	@each $property, $value in $text-help {
+		#{$property}: #{$value} !important;
+	}
+	border-color: #0ac30000 !important;
+}
+
+.hide-header {
+	.ant-table-thead {
+		display: none;
+	}
+}
+
+.ant-table-cell {
+	// ตรวจสอบจำนวน colspan
+	&[colspan] {
+		// ถ้า colspan มากกว่า 2 กำหนด padding = 0
+		&:not([colspan="1"]):not([colspan="2"]) {
+			padding: 0 !important;
+		}
+	}
+}
+
+.ant-table-title {
+	background-color: #1c4651;
+	color: white;
+	border: 0px solid var(--Color-Deep-Green-Deep-Green900, #ffffff);
+	height: 50px;
+}
+
+.ant-table-thead {
+	background-color: #000000;
+}
+
+/* Ensures the dropdown options are displayed inline */
+.horizontal-dropdown {
+	.rc-virtual-list-holder-inner {
+		flex-direction: row !important; /* Keep the items in a row */
+		display: flex;
+		flex-wrap: wrap;
+		max-height: auto;
+		overflow-y: auto;
+	}
+
+	.ant-select-item {
+		display: inline-flex;
+		padding: 8px 16px;
+		background-color: #f1f4f7;
+		border-radius: 10px;
+		margin-bottom: 8px; /* Add margin to handle spacing for new line */
+	}
+
+	.ant-select-item-option-selected {
+		background: #00a15e;
+		color: white;
+		border-radius: 10px !important;
+	}
+
+	.ant-select-item-option-active {
+		background-color: #d3d3d3 !important;
+	}
+
+	.ant-select-item-option {
+		padding: 5px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+	}
+}
+
+.base-grid.hide-header-base-grid {
+	.ant-table-thead {
+		display: none;
+	}
+}
+
+.base-grid {
+	&.is-have-border-bottom-left-right {
+		.ant-table-tbody {
+			.ant-table-row:last-child {
+				.ant-table-cell {
+					&:last-child {
+						border-bottom-right-radius: 1rem !important;
+					}
+					&:first-child {
+						border-bottom-left-radius: 1rem !important;
+					}
+				}
+			}
+		}
+	}
+	&.is-content-small-font {
+		td.ant-table-cell {
+			padding: 10px !important;
+			font-size: 12px !important;
+			line-height: 24px !important;
+		}
+	}
+}
